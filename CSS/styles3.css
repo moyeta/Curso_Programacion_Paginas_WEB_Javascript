@@ -1,0 +1,30 @@
+/* Asociado a las típicas barras de navegación pegajosas, necesitamos
+dejar un espacio dentro del body, es decir, utilizaremos el padding */
+body{
+    padding-top: 70px;
+}
+
+
+.fondo{
+    font-size:larger;
+    font-weight:bold;
+    /* background-color: #6f42c1; Fondo Bootstrap*/
+
+    color: black;
+
+}
+a{
+    background-color: white;
+}
+.imagen{
+    /* Fondo externo */
+    /* background-image: url(https://i2.wp.com/www.webdisenia.com/wp-content/uploads/2015/03/002.png);  */
+    background-image: url(../images/PNG-BootStrap.png); /* Imagen inyectada de manera local */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 200px;
+}
+svg{
+    margin:8px;
+}
