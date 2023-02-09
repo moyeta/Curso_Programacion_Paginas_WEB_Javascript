@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a bootstrap</title>
+    <!--
+        ** inyecto aquí los recursos de bootstrap, dentro de la acotación de la acotación de la etiqueta HEAD
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+<!--
+            =================
+                BOOTSTRAP
+            =================
+
+            Definido en sí mismo como un framework de estilos incluye una gran cantidad
+            de componentes (métodos(js) y clases(css)) que cubre gandes necesidades a los
+            diseñadores actuales
+            Qué necesidades:
+            1 Acceso de recursos de estilos ya definidos.
+            2 Responsive desing -> visualización ordenada según el dispositivo.
+            Sintaxis de instalación/inyección**
+-->
+
+<body>
+    <!--
+        * Dentro del body se produce la total visualización de lo que percibe el USUARIO
+        * Desde la url o path, ruta de nuestro proyecto
+        * el código por defecto es eficiente
+        *
+    -->
+    <div class="container">
+        <div>
+            <h1 class="display-3">Los Encabezados</h1>
+            <h1>Encabezado 1</h1>
+            <h2>Encabezado 2</h2>
+            <h3>Encabezado 3</h3>
+            <h4>Encabezado 4</h4>
+            <h5>Encabezado 5</h5>
+        </div>
+        <div>
+            <h1 class="display-2"> Los Parrafos <small>Estética con:<cite>Bootstrap</cite></small></h1>
+            <!-- Etiqueta conexión -->
+            <a href="https://www.google.es" class="bagde bg-light text-wrap" style="text-decoration: beige;">CONSULTA
+                🚽🧻</a>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit iure, vel voluptate magni
+                consequuntur id dolore ut in voluptatum tenetur consequatur beatae ratione distinctio aperiam, quaerat,
+                sint fuga dolor.
+            </p>
+            <p class="lead">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur quia mollitia animi nihil
+                voluptate quisquam tempora, et autem magni error ipsam nostrum explicabo nulla laudantium eveniet illum
+                dolorem provident.
+            </p>
+            <p class="text-left text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur quia mollitia animi nihil
+                voluptate quisquam tempora, et autem magni error ipsam nostrum explicabo nulla laudantium eveniet illum
+                dolorem provident.
+            </p>
+            <p class="text-right text-primary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur quia mollitia animi nihil
+                voluptate quisquam tempora, et autem magni error ipsam nostrum explicabo nulla laudantium eveniet illum
+                dolorem provident.
+            </p>
+            <p class="text-center text-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur quia mollitia animi nihil
+                voluptate quisquam tempora, et autem magni error ipsam nostrum explicabo nulla laudantium eveniet illum
+                dolorem provident.
+            </p>
+            <p class="text-warning lh-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur quia mollitia animi nihil
+                voluptate quisquam tempora, et autem magni error ipsam nostrum explicabo nulla laudantium eveniet illum
+                dolorem provident.
+            </p>
+            <p class="lead lh-xs">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur quia mollitia animi nihil
+                voluptate quisquam tempora, et autem magni error ipsam nostrum explicabo nulla laudantium eveniet illum
+                dolorem provident.
+            </p>
+            <p class="lead lh-lg text-danger">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia aspernatur quia mollitia animi nihil
+                voluptate quisquam tempora, et autem magni error ipsam nostrum explicabo nulla laudantium eveniet illum
+                dolorem provident.
+            </p>
+        </div>
+        <div class="" style="margin:0 auto; text-align: center">
+            <h2 class="display-3">Las Listas<small>Estetica Bootstrap</small></h2>
+            <!--Anidaciones de estructura-->
+
+            <ul class="">
+                <li>item A
+                    <ol>
+                        <li>item A.1
+                            <ol>
+                                <li>A.1.1</li>
+                                <li>A.1.2</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>item</li>
+                <li>item</li>
+
+            </ul>
+            <ul class="">
+                <li>item</li>
+                <li>item</li>
+                <li>item C
+                    <ul>
+                        <li>C.1</li>
+                        <li>C.2
+                            <ul>
+                                <li>C.2.1</li>
+                                <li>C.2.2</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item">item</li>
+                <li class="list-inline-item">item</li>
+                <li class="list-inline-item">item</li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">A simple default list group item</li>
+
+                <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+                <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                <li class="list-group-item list-group-item-light">A simple light list group item</li>
+                <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2 class="display-3"> Las Tablas <small>Estetica Bootstrap</small></h2>
+            <table class="table table-dark table-striped-columns table-bordered border-primary">
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                </tr>
+                <tr>
+                    <td>dato 4</td>
+                    <td>dato 5</td>
+                    <td>dato 6</td>
+                </tr>
+                <tr>
+                    <td>dato 7</td>
+                    <td>dato 8</td>
+                    <td>dato 9</td>
+                </tr>
+                <tr>
+                    <td>dato 10</td>
+                    <td>dato 11</td>
+                    <td>dato 12</td>
+                </tr>
+            </table>
+
+            <table class="table table-hover table-bordered table-success">
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                </tr>
+                <tr>
+                    <td>dato 4</td>
+                    <td>dato 5</td>
+                    <td>dato 6</td>
+                </tr>
+                <tr>
+                    <td>dato 7</td>
+                    <td>dato 8</td>
+                    <td>dato 9</td>
+                </tr>
+                <tr>
+                    <td>dato 10</td>
+                    <td>dato 11</td>
+                    <td>dato 12</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
