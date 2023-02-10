@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Variables</title>
+    <script src="js/script4.js"></script>
+</head>
+<body>
+    <!--
+                ==================
+                TIPOS DE VARIABLES
+                ==================
+
+        1. String -> Cadena de texto (caracteres)
+            a. Sintaxis, entre comillas simples o dobles
+            b. Comillas simples, dentro de ellas comillas dobles, y viceversa
+        2. Number -> Valores numéricos
+            a. Guarda indistintamente en una variable, cualquier realidad de los numeros reales
+            b. Soporta 3 bases numericas. Por defecto Decimal(10), base Octal(8), Hexadecimal(16)
+                ** Identificamos como;
+                    - Hexadecimal precedida de 0 y el símbolo x, es decir, 0x2345
+                    - Octal precedida de 0, es decir, 02345
+        3. Boolean -> Variables Lógicas
+            a. Valores duales true y false
+            b. minuscula
+            c. Necesidad de ofrecer vinculaciones y comparaciones
+            d. Equivalencia. false=0 y true=1 o distinto de 0 !=0
+        4. Object -> Objetos
+        5. Undefined -> Existe una variable pero no encuentra su valor
+            ejemplo:    var hola;
+                        hola = 6;
+                        console.log(hola);
+        6. Null -> No existe (elemento, objeto, variable) - No lo encuentra (ambito distinto) - No lo comprende (sintaxis)
+        7. NaN -> No comprende el valor numérico. Al acceder a la variable, no traduce el valor a numérico
+    -->
+    <script>
+        var texto='JavaScript';
+        var numero=7.8;
+        var buleana=true;
+        var fecha = new Date(); // Alfil o referencia para entender los objetos
+        var anulado = null;
+        var indefinida;
+
+/*
+Tipico metodo de rastreo de las variables typeof(),
+devolveré una cadena que indicará el tipo de variable que opera, sin evaluarla
+*/
+
+    </script>
+</body>
+</html>

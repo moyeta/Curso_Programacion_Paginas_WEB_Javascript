@@ -1,0 +1,27 @@
+/*
+Efectos básicos del SweetAlert
+a. [fondo overlay]
+b. ventana [modal]
+c. footer
+*/
+
+/* Llamada más general va con punto */
+.swal-overlay{
+    background-color: gray;
+}
+.swal-modal{
+    border: 2px solid green;
+    box-shadow: 2px 2px 3px grey;
+}
+.swal-footer{
+    background-color: violet;
+    margin: 0 auto;
+    border-top: 23px solid green;
+}
+/* Llamada a la etiqueta directamente*/
+h3{ 
+    text-align: center;
+    color: coral;
+    text-shadow: 2px 2px 3px grey;
+    font-size: larger;
+}
