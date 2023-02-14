@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO: Get Element By Id</title>
+    <!-- Ruta a mis Script -->
+    <script src="js/script3.js"></script>
+    <!-- Inyecto BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Inyecto el Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <!--
+        En resumen ver cómo funcionan los métodos dependiendo del tipado al acceso
+        de la variable, y observamos cómo trasladamos los resultados a un lugar concreto,
+        elegido y definido
+    -->
+    <div class="container" align="middle" style="margin-top:36px">
+
+        <div class="card text-bg-dark mb-3" style="max-width: 24rem;"> <!-- 24rem son 384px -->
+            <!--
+            1 px = 1pto
+            1 em = 16 px -> M
+            1 rem = 16 px
+        -->
+            <div class="card-header">FUNCIONES</div>
+            <div class="card-body">
+                <h5 class="card-title">Presiona el Botón para Visualizar</h5>
+                <p class="card-text" id="resultado">Encuentra las diversas funciones, tales como Matemáticas, de Texto <br>
+                    y Funciones Horarias (Calendario)
+                </p>
+                <!-- <div id="resultado"></div> -->
+                <p class="card-text" id="resultado"></p>
+            </div>
+
+
+
+        </div>
+        <button class="btn btn-outline-dark" onClick="funcionesMath()" type="button">∱[Math]</button>
+        <button class="btn btn-outline-dark" onClick="funcionesString()" type="button">∱[String]</button>
+        <button class="btn btn-outline-dark" onClick="funcionesDate()" type="button">∱[Date]</button>
+        
+    </div>
+</body>
+
+</html>
