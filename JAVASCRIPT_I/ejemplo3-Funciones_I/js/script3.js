@@ -64,7 +64,7 @@ un objeto definido por su metodo; dicho objeto se presenta súbitamente y desapa
 
 function funcionesDate(){
     var fecha = new Date();
-    const nombreDelDiaSegunFecha = [
+    const nombreDia = [
         'domingo',
         'lunes',
         'martes',
@@ -80,7 +80,7 @@ function funcionesDate(){
     '<label style="color: orange">Minutos: ' + fecha.getMinutes() + '</label>' + '<br>' +
     'Segundos: ' + fecha.getSeconds() + '<br>' +
     'Mes: ' + fecha.getMonth() + '<br>' + //? El primer elemento siempre es el 0 (0 enero, 1 febrero...)
-    'Día de la semana: ' + fecha.getDay()  + ' que es ' + fecha.getVarDate + '<br>' +
+    'Día de la semana: ' + fecha.getDay()  + ' que es ' + '<label style="color: red"><strong>' + nombreDia[fecha.getDay()]+ '</label></strong>' + '<br>' +
     'Día del mes: ' + fecha.getDate();
 }
 
