@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos Relacionales y Aritméticos</title>
+</head>
+<body>
+    <!-- 
+        Encontramos 3 tipos de Opeadores Principales:
+        A) OPERADORES LÓGICOS (Sentencias)
+            Conjunto de Caracteres reservados para establecer
+            Operador            Simbolo         Descripción
+            ===================================================
+            Copulativas (Y)     &&              Considera true, cuando ambas sentencias sean TRUE, falseará toda
+                                                la sentencia aquer sólo se falsee una de las partes de dicha sentencia
+            Adversativas (Ô)    ||              Considera la estructura de sentencias como true si alguna de las mismas
+                                                es verdadera
+            Inversa (Negación)  !               Invertiremos el sentido lógico de la sentencia, devolverá el valor
+                                                contrario de la sentencia
+        
+        B) OPERADORES RELACIONALES (Variables)
+            Conjunto de Caracteres reservados para establecer sentencias de comparación
+            Operador            Simbolo         Descripción
+            ===================================================
+            Asignación              =               Asignación inicial de valor
+
+            Igual A                 ==              Igualdad entre elementos comparados
+
+            Distinto de/No igual A  !=              Contrario al elemento comparado
+
+            Mayor, Mayor e igual    >   >=          Comaparaciones de cantidad, mayor o menor que
+            Menor, Menor e igual    <   <=          Así, como mayor e igual o menor e igual
+
+            Igualdad estricta       ===             La igualdad definida de toda la naturaleza de la varaible,
+                                                    tanto a su valor como a su tipo
+            
+            Inversa de igualdad    !==     Inversión del sentido lógico de su igualdad, contrario a igualdad estricta
+            estricta
+        
+        C) OPERADORES ARITMÉTRICOS
+             Operador            Simbolo         Descripción
+            ===================================================
+            suma y resta        + , -
+            Multiplicación      *
+            División            /
+            Incremento          ++
+            Decremento          --
+            División Entera     /
+            Resto División      % 
+     -->
+
+     <script>
+        var numero = 7;
+        console.log('Igualdad 7: '+ (numero==7));
+        console.log('Desilgualdad 7: '+ (numero!=7));
+        console.log('Mayor 7: ' + (numero>7));
+        console.log('Mayor o igual 7: ' + (numero >= 7));
+        console.log('Menor o igual 10: ' + (numero <= 10));
+        console.log('Mayor o igual 10: ' + (numero >= 10));
+
+        // Igualdad Estricta
+        console.log('Igualdad  \'7\': ' + (numero == '7'));
+        console.log('Igualdad Estricta \'7\': ' + (numero === '7'));
+
+        // Operadores Lógicos
+        var nombre1 = 'Juan';
+        var nombre2 = 'Pepa';
+
+        console.log('Condición Y: ' +(nombre1 == 'Juan')&&(nombre2 == 'Pepaaaa')); // Al ser una de las sentencias falsa
+                                                                                  // toda la estructura es considerada FALSE
+        console.log('Condición Ô: ' +(nombre1 == 'Juan')||(nombre2 == 'Pepaaaa')); // Aunque una de las sentencias sea falsa
+                                                                                  // como una sentencia es verdadera, toda la
+                                                                                  // estructura es considerada TRUE
+        console.log('Negación 2ª Sentencia: ' + !(nombre2 == 'Pepaaaa'));
+        console.log('Negación 1ª Sentencia: ' + ((nombre1 != 'Juannnn')&&(nombre2 == 'Pepa')));
+
+        // PROBAR TAMBIÉN CON STRINGs
+        var icono = '🎈';
+        console.log('Igualdad: ' + (icono=='🧦'));
+        
+
+     </script>
+</body>
+</html>

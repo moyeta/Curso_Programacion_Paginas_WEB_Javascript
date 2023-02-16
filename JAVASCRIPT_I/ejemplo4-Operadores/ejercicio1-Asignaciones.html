@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de Asignación Simple y Compuesta ⚙</title>
+</head>
+<body>
+    <!-- 
+                                ===============================
+                                OPERADORES SIMPLES Y COMPUESTOS
+                                ===============================
+        
+                Descripción de la Operación                 Operador
+
+                    Asignación directa                          =
+                    💡 Adición                                  +=
+                    Sustracción                                 -=
+                    Multiplicación                              *=
+                    División                                    /=
+                    Resto (valor del resto)                     %=
+                                                        dividendo/divisor
+                                                        resto   cociente
+        resto: resultado de la división siendo el número que 'nos queda' como resultado de una división finalizada
+        resto exacto == 0; no es resto exacto distinto de 0 (!=) [interesante para moverte entre elementos de manera pautada]
+     -->
+
+     <script>
+        // Asignación Simple 
+        var numero = 5;
+        console.log('Asignación a numero: '+numero)
+        numero = numero + 3;
+        console.log('numero = numero + 3: '+numero);
+        // Asignación Compuesta
+        numero += 3;
+        console.log('numero += 3: '+numero);
+        numero * 6; // Se multiplica pero no se asigna a la variable numero
+        console.log('numero * 6: '+numero+ ' (No hay asignación)');
+        numero *= 6; // 66
+        console.log('numero *= 6: '+numero);
+        numero /= 9;
+        console.log('numero /= 9: '+numero);
+        numero = numero - 2;
+        console.log('numero = numero - 2: '+numero)
+        numero -= 2;
+        console.log('numero -= 2: '+numero);
+        // por qué sale 3.33333333?
+
+        // Lo mismo con String
+        var letras = 'a';
+        console.log('Asignación a letras: '+letras);
+        letras = letras + 'b';
+        console.log('letras = letras + b: '+letras);
+        letras += 'c';
+        console.log('letras += c: '+letras);
+        letras = letras + 'de';
+        console.log('letras = letras + de'+letras);
+        letras = letras - 'e';
+        console.log('letras = letras - e: '+letras);
+        
+
+
+
+
+
+     </script>
+</body>
+</html>

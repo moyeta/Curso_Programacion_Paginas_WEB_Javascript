@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a las Estructuras de Control</title>
+    <!-- Inyecto BootStrap-->
+    
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!-- 
+                        ======================
+                        ESTRUCTURAS DE CONTROL
+                        ======================
+            Como estructuras, tiene configuración asignada, con la finalidad principal
+            que nos permita tomar decisiones en función de determinadas condiciones que
+            inicialmente se hayan impuesto, seguidamente originando la ejecución de uno
+            u otro código, sentencia....
+            Tipos de Estructuras:
+            1. IF ELSE (Condición)
+            2. SWITCH CASE (Posibilidades)
+            3. FOR (Bucle, iteración... Recorridos)
+                3.1 FOR IN
+                3.2 FOR OF
+                3.3 FOR EACH
+                    3.3.1 Función ARROW =>
+            4. WHILE
+            5. DO WHILE
+
+        1. IF ELSE
+        Sintaxis:
+            if(condición=true){
+                [ejecución de sentencias... solamente si la condición principal es TRUE]
+            }else{
+                [sentencia 2..., se ejecuta cuando la sentencia principal es FALSE]
+            }
+        Se comprobará la validez o falsedad de una condición. Primer código se ejecuta si es TRUE
+        y si es FALSE se ejecuta el siguiente código (else)
+        
+    -->
+    <script>
+        var numero = 3;
+        if (numero >= 5) { // Evaluación de la variable con la condición. Se pueden encadenar condiciones(()&&())||(()&&())
+            swal('El número es mayor o igual que 5'); // No se lee, es false
+        } else {
+            swal('El número es menor que 5');
+        }
+
+        // Anidaciones de estructuras: De uso principal cuando no comparas las condiciones sino las VARIABLES
+        var numero2 = 3;
+        if (numero >= 5) {
+            swal('El número es mayor o igual que 5');
+        }else if (numero2 >= 5) { // No es nada más, que poder alargar la estructura de control añadiendo variables
+            swal('El número2 es mayor o igual que 5');
+        } else {
+            swal('Ambos números son menores que 5');
+        }
+
+        // APLICACIÓN DE DAR 10 CLICKS A DOS BOTONES
+
+    </script>
+
+
+</body>
+
+</html>
