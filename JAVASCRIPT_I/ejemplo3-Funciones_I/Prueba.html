@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar un Reloj ⌚</title>
+    <!-- Inyecto BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stylePrueba.css">
+</head>
+
+<body>
+    <div class="container" style="text-align: center; margin: 0 auto;">
+        <h3>Construye la visualización estática de un reloj</h3>
+        <label for="" class="">Partiendo de un botón</label><br></br>
+
+        <!-- Mostrar los Resultados -->
+        <!-- <button class="btn btn-outline-dark" onClick="cierre()" type="button">Cerrar Reloj</button> -->
+        <ol>
+            <li>En un click nos muestre hh:mm</li>
+            <li>Otro botón que cierre el reloj</li>
+            <li>Formato multiplataforma en app o encapsulado</li>
+            <li>Atendiendo a UX (imagen)</li>
+        </ol>
+
+
+
+        <label for="">Puntuación:</label>
+        <li>1 pto</li>
+        <!-- Mi reloj -->
+        <div class="container" style="text-align: center; margin: 0 auto; margin-top: 18px;">
+            <div class="card text-center mb-3" style="width: 18rem;">
+                <img src="images/Reloj.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <h5 class="card-title text-bg-warning p-3">RELOJ ⌚</h5>
+
+                    <p class="card-text"><code>¿Sabrías decirme qué hora es?</code></p>
+                    <button class="btn btn-outline-danger" onclick="hora()">¡Aquí tienes la solución!
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-watch" viewBox="0 0 16 16">
+                            <path d="M8.5 5a.5.5 0 0 0-1 0v2.5H6a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V5z" />
+                            <path
+                                d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a5.99 5.99 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A5.99 5.99 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667H5.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z" />
+                        </svg><span class="badge text-bg-dark rounded-pill" id="resultado"></span>
+                    </button>
+                    <br></br>
+                    <a class="btn btn-primary" onclick="cierre()">Cerrar</a>
+                </div>
+            </div>
+        </div>
+        <!-- Ruta a mis Script -->
+        <script src="js/scriptPrueba.js"></script>
+    </div>
+</body>
+
+</html>
