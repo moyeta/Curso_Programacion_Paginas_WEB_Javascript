@@ -1,0 +1,45 @@
+/* La importación debe estar al principio para la ejecución en cascada */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Shantell+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+.centrado{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20rem 0;
+
+}
+#reloj{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Shantell Sans', cursive;
+    color: black;
+    font-size: 50px;
+}
+#hoy{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Black Ops One', cursive;
+    font-size: 30px;
+}
+
+/* 
+Acotador de visualización
+*/
+@media (max-width: 900px) { /* Acota el límite de visualización (380px movil... bootstrap:sm-lg-xl)  */
+    #reloj{
+        font-size: 36px;
+    }
+    #hoy{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 900px) { /* Límite para la visualización */
+    #reloj{
+        font-size: 8rem;
+    }
+    #hoy{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,23 @@
+/* La importación debe estar al principio para la ejecución en cascada */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.post-it{
+    width: 15.62rem;
+    height: 15rem;
+    position: relative;
+    background-color: #ffa;
+    margin: 30px auto;
+    padding: 50px;
+    border-radius: 0px 0px 0px 30px/45px; /* El sentido de los cuadrantes es el de las agujas del reloj */
+    box-shadow: inset 0px -40px 40px rgb(0, 0, 0, 0.2), inset 0px 25px 10px rgb(0, 0, 0, 0.2), 0px 5px 6px rgb(0, 0, 0, 0.2);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 19px;
+    letter-spacing: 0.1rem;
+}
+
+h4{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 19px;
+    letter-spacing: 0.1rem;
+
+}
