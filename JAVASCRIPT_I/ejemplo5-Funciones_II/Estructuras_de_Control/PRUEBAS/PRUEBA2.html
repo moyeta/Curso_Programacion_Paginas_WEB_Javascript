@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Subida Salarial 💰</title>
+    <!-- Inyecto BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Inyecto mi Script -->
+    <script src="js/Prueba.js"></script>
+</head>
+
+<body>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-3 fw-bold lh-1 mb-3" style="text-align: center"><u>Cálculo de la Subida Salarial</u>
+                </h1>
+                <p class="col-lg-14 fs-4" style="text-align: justify;">Tras los acuerdos alcanzados entre el gobierno y
+                    la patronal (según se recoge en el convenio colectivo R.D 713/2020); se establence una actualización
+                    y subida de los salarios de los trabajadores según sus
+                    características personales.<br>
+                    <code>Para ello, nuestra empresa ha desarrollado una app que permite el cálculo de esta subida salarial.</code>
+                </p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-light">
+                    <div class="form-floating mb-3">
+                        <!-- El tipo debe ser text para poder introducir texto sin formato; el id se recogerá en la siguiene ventana -->
+                        <input type="text" class="form-control" id="entradaNombre" placeholder="nombreTrabajador">
+                        <label for="entradaNombre">Nombre y Apellidos del Trabajador/a</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="entradaDNI" placeholder="apellidosTrabajador">
+                        <label for="entradaApellidos">DNI / NIE</label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="button" data-bs-target="#ventanaModal_1"
+                        data-bs-toggle="modal">Calcula tu subida</button>
+                    <hr class="my-4">
+                    <small class="text-muted">A hacer clic, aceptas el tratamiento de tus datos personales</small>
+                </form>
+            </div>
+        </div>
+        <div class="modal fade" id="ventanaModal_1" aria-hidden="true" aria-labelledby="ventanaModal_1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header"> <!-- CABECERA -->
+                        <h1 class="modal-title fs-5" id="ventanaModal_1"><u>Intervalo Salarial</u></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"> <!-- CUERPO -->
+                        Seleccione del desplegable el intervalo en el que se encuentra su retribución salarial
+                        anual<br>
+                        <small class="text-muted">(para este cálculo no se contabilizan pagas extras)</small>
+                    </div>
+                    <div class="modal-footer"> <!-- PIE -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Intervalo Salarial
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" type='button' href="#">
+                                        < 15.000 €/año</a>
+                                </li>
+                                <li><a class="dropdown-item" type='button' href="#">
+                                        > 15.000 €/año</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary" data-bs-target="#ventanaModal_2"
+                            data-bs-toggle="modal">Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ventanaModal_2" aria-hidden="true" aria-labelledby="ventanaModal_2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header"> <!-- CABECERA -->
+                        <h1 class="modal-title fs-5" id="ventanaModal_2"><u>Perspectiva de Género y Unidad Familiar</u>
+                        </h1>
+                        <button type="button" class="btn btn-secondary" style="text-align: center; margin: 0 auto;" data-bs-container="modal-header"
+                            data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                            ayuda
+                        </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"> <!-- CUERPO -->
+                        <!-- Mensaje de ayuda: La actualización salarial tiene en cuenta las necesidades de mujeres y hombres con cargas familiares.
+                        Apostando por la eliminación de la brecha salarial y compatibilizando el trabajo con la vida familiar. -->
+                        Seleccione lo que proceda:
+
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                                id="masculino">
+                            <label class="form-check-label" for="masculino">Masculino</label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                                id="femenino">
+                            <label class="form-check-label" for="femenino">Femenino</label>
+                        </li>
+                    </ul>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label"
+                            style="text-align: center; margin: 0 auto;">Hijos a su cargo:</label>
+                        <input type="text" class="form-control" id="numeroHijos">
+                    </div>
+                    <div class="modal-footer"> <!-- PIE -->
+                        <button class="btn btn-primary" data-bs-target="#ventanaModal_1" data-bs-toggle="modal">Proceder
+                            al Cálculo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first
+            modal</button> -->
+    </div>
+</body>
+
+</html>

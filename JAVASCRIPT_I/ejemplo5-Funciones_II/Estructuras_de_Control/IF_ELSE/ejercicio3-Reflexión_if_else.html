@@ -7,9 +7,9 @@
     <title>Reflexión IF ELSE 🙄</title>
 </head>
 <body>
-    <script>
+   <!--  <script>
         /* var condition = 15;
-        if (condition >= 0 && condition <= 10) {
+        if (condition >= 0 && condition <= 10) { // Crear Intervalos
             document.write('Evento UNO');
         } else if (condition >10 && condition <=20){
             document.write('Evento DOS');
@@ -19,7 +19,7 @@
 
         //
         var nombre = window.prompt('Introduce el nombre del usuario 1 que es Fernando');
-        var nombre2 = window.prompt('Introduce el nombre de Luisa');
+        var nombre2 = window.prompt('Introduce el nombre del usuario 2 que es Luisa');
         // Qué condiciones puedo establecer para que salga solo por document.write 'Luisa' y viceversa
         if (nombre == 'Fernando' && nombre2 == 'Luisa') {
             document.write('Bienvenidos de nuevo '+ nombre + ' y ' + nombre2);
@@ -29,6 +29,17 @@
             document.write('Bienvenida '+nombre2+'. A '+nombre+' no tengo el gusto de conocerle.');
         } else {
             document.write('Ni Luisa ni Fernando. No os conozco '+nombre+' y '+nombre2);
+        }
+    </script> -->
+
+    <script>
+        // Funciones para establecer que salga Fernando o Luisa unicamente sin tocar las variables
+        var n = 'Fernando';
+        var n2 = 'Luisa';
+        if (n != n2) { // Filtrar Excepciones == ó !=
+            document.write(n);
+        } else {
+            document.write(n2);
         }
     </script>
 </body>
